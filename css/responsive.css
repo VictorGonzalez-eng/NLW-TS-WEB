@@ -1,0 +1,49 @@
+@media (min-width: 1700px) {
+   #page-home {
+      background-position-x: 40vw;
+   }
+} 
+
+
+@media (max-width: 900px) {
+   #page-home {
+      background-position-x: 70vw;
+   }
+
+   #page-home .container {
+      align-items: center;
+      text-align: center;
+   }
+
+   #page-home header a {
+      left: 50%;
+      bottom: 30px;
+      position: absolute;
+      transform: translateX(-50%);
+   }
+
+   #page-home main {
+      margin-top: 60px;
+      align-items: center;
+   }
+
+   #page-search-results .cards {
+      grid-template-columns: 1fr;
+   }
+
+   #page-search-results .cards img {
+      height: 200px;
+   }
+
+   .cards .card {
+      margin-bottom: 40px;
+   }
+}
+
+
+@media (max-height: 620px) {
+   #page-home {
+      background-position-y: 200px;
+   }
+}
+

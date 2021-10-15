@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>next level</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet"><!--akie uma maneira de colocar mais de uma fonte em um unico link-->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/create-point.css">
+   <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <div id="page-create-point">
+      <header>
+         <img src="./images/icones/logo.svg" alt="logomarca">
+         <a href="index.html"><span></span>Voltar para home</a>
+      </header>
+      
+      <form action="">
+         <h1>Cadastro do ponto de coleta</h1>
+         <fieldset>  
+            <legend>
+               <h2>Dados da entidade</h2>
+            </legend>
+            <div class="field">
+               <label for="name">Nome da entidade</label>
+               <input type="text" name="name" required>
+            </div><!--field-->
+
+            <div class="field-group">
+               <div class="field">
+                  <label for="address">Endereço</label>
+                  <input type="text" name="address" required>        
+               </div>
+               <div class="field">
+                  <label for="address">Número/Complemento</label>
+                  <input type="text" name="address" required>
+               </div>
+            </div><!--field-group-->
+
+            <div class="field-group">
+               <div class="field">
+                  <label for="state">Estado</label>
+                  <select name="uf" required>
+                     <option value="">Selecione o Estado</option>
+                  </select>
+                  <input type="hidden" name="state">
+               </div>
+               <div class="field">
+                  <label for="city">Cidade</label><!--o disabled serve para deixr o elemento desativado-->
+                  <select name="city" disabled required>
+                     <option value="">Selecione a Cidade</option>
+                  </select>       
+               </div>
+            </div><!--field-group-->   
+            
+         </fieldset><!--serve para fazer um agrupamentos de elementos e o mesmo que usar uma div mais esse e mais uma questao sematica do html e organizaçao do codigo e quando usar o fieldset usar tbm o lengend dentro serve meio que para o titulo ou descriçao-->
+         <fieldset>
+            <legend>
+               <h2>Itens de coleta</h2>
+            </legend>
+
+            <div class="items-grid">
+               <li data-id="1">
+                  <img src="./images/icones/lampadas.svg" alt="lampadas"><!--alt decricao d img-->
+                  <span>Lâmpadas</span>
+               </li><!--li para fazer listas-->
+               <li data-id="2">
+                  <img src="./images/icones/baterias.svg" alt="Pilhas e Baterias"><!--alt decricao d img-->
+                  <span>Pilhas e Baterias</span>
+               </li>
+               <li data-id="3">
+                  <img src="./images/icones/papeis-papelao.svg" alt="Papeis e Papelão"><!--alt decricao d img-->
+                  <span>Papeis e Papelão</span>
+               </li>
+               <li data-id="4">
+                  <img src="./images/icones/eletronicos.svg" alt="Redisuos Eletronicos"><!--alt decricao d img-->
+                  <span>Redisuos Eletronicos</span>
+               </li>
+               <li data-id="5">
+                  <img src="./images/icones/organicos.svg" alt="Residuos Organicos"><!--alt decricao d img-->
+                  <span>Residuos Organicos</span>
+               </li>
+               <li data-id="6">
+                  <img src="./images/icones/oleo.svg" alt="Oleo de Cozinha"><!--alt decricao d img-->
+                  <span>Oleo de Cozinha</span>
+               </li>
+            </div><!--items-grid-->
+            <input type="hidden" name="items">
+         </fieldset>
+         <button type="submit">Cadastrar ponto de coleta</button>
+      </form>
+
+   </div><!--page-create-->
+   
+   <script src="js/create-point.js"></script>
+</body>
+</html>

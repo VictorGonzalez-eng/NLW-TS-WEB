@@ -1,0 +1,28 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+:root {
+   --title-color: #322153;
+   --primary-color: #34cb79;
+}/*akie e mais o menos cmo o sass da para usar essa propriedade onde vc quiser i o elemento que vc escolher fica cm essa propriedade que akie no caso e o color*/
+
+body {
+   background: #f0f0f5;
+   -webkit-font-smoothing: antialiased;/*isso serve para fonte achoque para a fonte ser apresnetada de forma mais suave algo assim*/
+}
+
+a {
+   text-decoration: none;
+}
+
+h1, h2, h3 ,h4 ,h5 {
+   color:var(--title-color);
+   /*akie faz a refencia com o :root que esta la no começo*/
+   font-family: 'Ubuntu', sans-serif;
+}
+
+
